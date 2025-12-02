@@ -3,7 +3,7 @@ public class Application {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] number = {5, -4, 0, 12, 40, 6};
+		/*int[] number = {5, -4, 0, 12, 40, 6};
 		
 		boolean checkZeri = false;
 		for(int i = 0; i< number.length; i++)
@@ -21,6 +21,25 @@ public class Application {
 		else
 		{
 			System.out.println("l'array contiene zeri");
+		}*/
+		
+		int[] number = {5, -4, 0, 12, 40, 6};
+		boolean isPositive = true;
+		for(int i = 0; i< number.length; i++)
+		{
+			if(number[i] < 0)
+			{
+				isPositive = true;
+				break;
+			}
+		}
+		if(isPositive) 
+		{
+			System.out.println("sono tutti positivi");
+		}
+		else 
+		{
+			System.out.println("non sono tutti positivi");			
 		}
 	}
 
